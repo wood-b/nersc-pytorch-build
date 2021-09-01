@@ -1,11 +1,7 @@
 # Source me to setup config for the installations
 
-if [ $USER == "swowner" ]; then
-    umask 002 # all-readable
-    INSTALL_BASE=/global/common/software/nersc/shasta2105
-else
-    INSTALL_BASE=$SCRATCH/conda
-fi
+umask 002 # all-readable
+INSTALL_BASE=/global/common/software/m1759/catalysis_dl_envs
 
 # Configure the installation
 export CPATH=""
